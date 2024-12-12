@@ -1,4 +1,4 @@
-export interface character{
+export interface Character{
     name: string;
     power: number;
 }
