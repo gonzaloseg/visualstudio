@@ -1,7 +1,5 @@
-import { Component, EventEmitter, Input, Output, output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Character } from '../../interfaces/character.interface';
-import { OutletContext } from '@angular/router';
-
 
 @Component({
   selector: 'dbz-add-character',
