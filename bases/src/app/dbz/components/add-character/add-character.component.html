@@ -1,6 +1,8 @@
 <p>add-character works!</p>
 <h4>Agregar personaje</h4>
+<!--con este codigo le pedimos al usuario que añada con datos nuevos de un personaje-->
     <form class="row" (ngSubmit)="emitCharacter()">
+        <!--relaciona la varianble character name con name-->
       <input type="text"
       [(ngModel)]="character.name"
       name="name"
@@ -12,7 +14,7 @@
       name="power"
       class="form-control mb-2"
       placeholder="placeholder">
-
+ <!--con la siguiente linea al darle al boton activa el metodo emitCharacter por lo que lo añade a la lista-->
       <button type="submit" class="btn btn-primary" (click)="emitCharacter()">
       Agregar
     </button>

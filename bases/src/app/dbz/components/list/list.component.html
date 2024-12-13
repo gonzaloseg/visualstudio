@@ -1,5 +1,6 @@
 <p>list works!</p>
 <h4>Listado</h4>
+<!--creamos una lista para mostrar los personajes-->
 <ul class="list-group">
   <li *ngFor="
   let character of characterList;
@@ -15,14 +16,14 @@
     'list-group-item-dark': isLast,
     'list-group-item-primary': isEven
   }">
-
+<!--organiza los personajes con su poder en la misma linea separados por un guión-->
   <div>
     <span class="text-primary">{{i+1}}</span>
     <span>{{ character.name}} - </span>
     <strong>Power: </strong>
     <span>{{character.power}}</span>
   </div>
-
+<!--al pulsar el boton eliminamos el personaje que teniamos en la lista-->
   <button class="btn btn-danger" (click)="onDeteteCharacter(i)" >X</button>
 
   </li>

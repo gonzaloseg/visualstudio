@@ -7,6 +7,7 @@ import { Character } from '../../interfaces/character.interface';
   styleUrl: './add-character.component.css'
 })
 export class AddCharacterComponent {
+  //metodo para añadir un nuevo superheroe
  @Output()
  public onNewCharacter: EventEmitter<Character> = new EventEmitter();
 

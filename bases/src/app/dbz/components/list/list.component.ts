@@ -8,6 +8,7 @@ import { OutletContext } from '@angular/router';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
+  //con el imput sacamos desde la clase padre la informacion
 @Input()
   public characterList: Character[] = [{
     name:'Trunk',
@@ -19,7 +20,7 @@ export class ListComponent {
 @Output()
 public onDelete: EventEmitter<number> = new EventEmitter();
 
-
+// creamos el metodo para eliminar
 onDeteteCharacter(index:number):void{
 
    this.onDelete.emit(index);
