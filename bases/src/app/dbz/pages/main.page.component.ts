@@ -32,4 +32,4 @@ export class MainPageComponent {
     this.characters.splice(index,1);
   }
 
-}
+}//actualizando el proyecto
