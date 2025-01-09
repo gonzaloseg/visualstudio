@@ -8,7 +8,7 @@ import { Component} from '@angular/core';
 })
 
 export class MainPageComponent {
-//creamos la lista con los personajes que nos van a salir siempre 
+
   public characters: Character[] = [{
     name: 'Krillin',
     power: 1000
@@ -21,11 +21,11 @@ export class MainPageComponent {
   }];
 
  // onDelete = Index value: number;
-//te agrega el nuevo personaje
+
   onNewCharacter(character:Character): void{
     this.characters.push(character);
   }
-//te elimina un personaje
+
   onDeleteCharacter(index:number){
 
     //this.characters.splice(1,2)
